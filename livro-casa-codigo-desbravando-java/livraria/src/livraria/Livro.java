@@ -6,6 +6,7 @@ public class Livro {
 	private double valor;
 	private String isbn;
 	private Autor autor;	
+	private boolean impresso;
 
 	public double getValor() {
 		return valor;
@@ -49,6 +50,7 @@ public class Livro {
 	
 	public Livro() {
 		this.isbn = "0000-00-00000-00-0";		
+		this.setImpresso(true);
 	}
 
 	public Livro(Autor autor) {
@@ -72,11 +74,12 @@ public class Livro {
 		return this.autor != null;
 	}
 
-	public boolean aplicaDescontoDe(double desconto) {
-		if(desconto > 0.3) {
+	public boolean aplicaDescontoDe(double porcentagem) {
+		if(porcentagem > 0.3) {
 			return false;
 		}
-		this.setValor(this.getValor() - this.getValor() * desconto);
+		System.out.println("Aplicando desconto no livro");
+		this.setValor(this.getValor() - this.getValor() * porcentagem);
 		return true;
 	}
 
@@ -87,6 +90,14 @@ public class Livro {
 
 	public double retornaValor() {
 		return this.getValor();
+	}
+
+	public boolean isImpresso() {
+		return impresso;
+	}
+
+	public void setImpresso(boolean impresso) {
+		this.impresso = impresso;
 	}
 
 	
