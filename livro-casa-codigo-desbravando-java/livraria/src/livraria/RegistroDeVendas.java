@@ -1,5 +1,9 @@
 package livraria;
 
+import livraria.models.Autor;
+import livraria.models.Ebook;
+import livraria.models.LivroFisico;
+
 public class RegistroDeVendas {
 	public static void main(String[] args) {
 		Autor autor = new Autor();
@@ -8,7 +12,10 @@ public class RegistroDeVendas {
 		LivroFisico livroFisico = new LivroFisico(autor);
 		livroFisico.setNome("TDD");
 		livroFisico.setValor(59.9);
-		
+		if(livroFisico.aplicaDescontodDe10PorCento()) {
+			System.out.println("Valor agora é de: " + livroFisico.getValor());
+		}
+				
 		Ebook ebook = new Ebook(autor);
 		ebook.setNome("TDD");
 		ebook.setValor(39.9);

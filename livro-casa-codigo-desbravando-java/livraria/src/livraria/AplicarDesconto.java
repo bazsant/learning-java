@@ -1,5 +1,8 @@
 package livraria;
 
+import livraria.models.Autor;
+import livraria.models.LivroFisico;
+
 public class AplicarDesconto {
 	public static void main(String[] args) {
 		Autor autor = new Autor();

@@ -1,6 +1,8 @@
-package livraria;
+package livraria.models;
 
-public abstract class Livro {
+import livraria.interfaces.Produto;
+
+public abstract class Livro implements Produto {
 	private String nome;
 	private String descricao;
 	private double valor;
@@ -91,6 +93,5 @@ public abstract class Livro {
 		this.impresso = impresso;
 	}
 
-	public abstract boolean aplicaDescontoDe(double porcentagem);
 	
 }

@@ -1,5 +1,7 @@
 package livraria;
 
+import livraria.interfaces.Produto;
+
 public class CarrinhoDeCompras {
 
 	private double total;
@@ -12,10 +14,8 @@ public class CarrinhoDeCompras {
 		this.total = total;
 	}
 	
-	public void adiciona(Livro livro) {		
-		System.out.println("Adicionado: " + livro);		
-		livro.aplicaDescontoDe(0.05);
-		this.setTotal(this.getTotal() + livro.getValor());
+	public void adiciona(Produto produto) {		
+		System.out.println("Adicionado: " + produto);		
+		this.setTotal(this.getTotal() + produto.getValor());
 	}
-	
 }

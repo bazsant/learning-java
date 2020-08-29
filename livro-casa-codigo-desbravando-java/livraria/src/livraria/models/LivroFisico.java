@@ -1,6 +1,8 @@
-package livraria;
+package livraria.models;
 
-public class LivroFisico extends Livro {
+import livraria.interfaces.Promocional;
+
+public class LivroFisico extends Livro implements Promocional {
 	public LivroFisico(Autor autor) {
 		super(autor);
 	}

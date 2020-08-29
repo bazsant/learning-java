@@ -1,5 +1,9 @@
 package livraria;
 
+import livraria.models.Autor;
+import livraria.models.Ebook;
+import livraria.models.LivroFisico;
+
 public class CadastroLivro {
 	public static void main(String[] args) {
 		
