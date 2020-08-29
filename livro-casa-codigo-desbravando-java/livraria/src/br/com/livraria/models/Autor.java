@@ -1,4 +1,4 @@
-package livraria.models;
+package br.com.livraria.models;
 
 public class Autor {
 	private String nome;

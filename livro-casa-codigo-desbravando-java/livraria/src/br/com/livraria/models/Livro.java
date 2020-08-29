@@ -1,6 +1,6 @@
-package livraria.models;
+package br.com.livraria.models;
 
-import livraria.interfaces.Produto;
+import br.com.livraria.interfaces.Produto;
 
 public abstract class Livro implements Produto {
 	private String nome;

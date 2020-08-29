@@ -1,6 +1,6 @@
-package livraria.models;
+package br.com.livraria.models;
 
-import livraria.interfaces.Promocional;
+import br.com.livraria.interfaces.Promocional;
 
 public class Ebook extends Livro implements Promocional {
 	public Ebook(Autor autor) {

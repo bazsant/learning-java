@@ -1,8 +1,8 @@
-package livraria;
+package br.com.livraria;
 
-import livraria.models.Autor;
-import livraria.models.Ebook;
-import livraria.models.MiniLivro;
+import br.com.livraria.models.Autor;
+import br.com.livraria.models.Ebook;
+import br.com.livraria.models.MiniLivro;
 
 public class RegrasDeDesconto {
 	public static void main(String[] args) {

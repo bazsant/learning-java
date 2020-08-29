@@ -1,4 +1,4 @@
-package livraria;
+package br.com.livraria;
 
 public class CalculadoraDeEstoque {
 	public static void main(String[] args) {

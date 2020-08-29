@@ -1,7 +1,7 @@
-package livraria;
+package br.com.livraria;
 
-import livraria.models.Autor;
-import livraria.models.LivroFisico;
+import br.com.livraria.models.Autor;
+import br.com.livraria.models.LivroFisico;
 
 public class AplicarDesconto {
 	public static void main(String[] args) {

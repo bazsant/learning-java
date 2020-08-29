@@ -1,4 +1,4 @@
-package livraria.interfaces;
+package br.com.livraria.interfaces;
 
 @FunctionalInterface
 public interface Promocional {

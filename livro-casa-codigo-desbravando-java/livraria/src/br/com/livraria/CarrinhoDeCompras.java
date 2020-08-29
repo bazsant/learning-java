@@ -1,6 +1,6 @@
-package livraria;
+package br.com.livraria;
 
-import livraria.interfaces.Produto;
+import br.com.livraria.interfaces.Produto;
 
 public class CarrinhoDeCompras {
 

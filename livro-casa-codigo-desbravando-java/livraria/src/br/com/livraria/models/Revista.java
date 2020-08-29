@@ -1,7 +1,7 @@
-package livraria.models;
+package br.com.livraria.models;
 
-import livraria.interfaces.Produto;
-import livraria.interfaces.Promocional;
+import br.com.livraria.interfaces.Produto;
+import br.com.livraria.interfaces.Promocional;
 
 public class Revista implements Produto, Promocional {
 	private String nome;
