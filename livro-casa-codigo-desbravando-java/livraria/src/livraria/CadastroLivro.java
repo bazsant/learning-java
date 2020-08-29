@@ -8,7 +8,7 @@ public class CadastroLivro {
 		autor.setEmail("bazsant@github.com");
 		autor.setCpf("607060706-70");
 		
-		Livro livro = new Livro(autor);
+		LivroFisico livro = new LivroFisico(autor);
 		
 		livro.setNome("Java Prático");
 		livro.setDescricao("Novos recursos de linguagem");
@@ -17,7 +17,7 @@ public class CadastroLivro {
 
 		livro.mostrarDetalhes();
 		
-		Livro outroLivro = new Livro(autor);
+		Ebook outroLivro = new Ebook(autor);
 		outroLivro.setNome("Logica de programacao");
 		outroLivro.setDescricao("Faca seu proprio programa");
 		outroLivro.adicionarValor(59.9);

@@ -2,7 +2,10 @@ package livraria;
 
 public class AplicarDesconto {
 	public static void main(String[] args) {
-		Livro livro = new Livro();
+		Autor autor = new Autor();
+		autor.setNome("Jhones Bazilio");
+		
+		LivroFisico livro = new LivroFisico(autor);
 		livro.adicionarValor(59.9);
 		
 		System.out.println("Valor atual:" + livro.retornaValor());

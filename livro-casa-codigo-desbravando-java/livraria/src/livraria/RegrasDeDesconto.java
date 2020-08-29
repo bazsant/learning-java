@@ -5,7 +5,7 @@ public class RegrasDeDesconto {
 		Autor autor = new Autor();
 		autor.setNome("Jhones Bazilio dos Santos");
 		
-		Livro livro = new Livro(autor);
+		Livro livro = new MiniLivro(autor);
 		livro.setValor(59.9);
 		
 		if(!livro.aplicaDescontoDe(0.3)) {
