@@ -1,5 +1,8 @@
 package br.com.livraria.models;
 
+import javax.management.RuntimeErrorException;
+
+import br.com.livraria.exception.AutorNuloException;
 import br.com.livraria.interfaces.Produto;
 
 public abstract class Livro implements Produto {
@@ -57,8 +60,10 @@ public abstract class Livro implements Produto {
 
 	public Livro(Autor autor) {
 		this();
+		if(autor == null) {
+			throw new AutorNuloException("O autor do livro não pode ser nulo");
+		}
 		this.autor = autor;
-		System.out.println("Livro criado");
 	}
 	
 	public void mostrarDetalhes() {
